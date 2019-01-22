@@ -25,7 +25,13 @@
     [UIImagePickerController hookDelegate];
 }
 
+- (IBAction)unHook:(UIButton *)sender {
+    
+}
 
+- (void)dealloc{
+    [UIImagePickerController unHookDelegate];
+}
 
 
 @end

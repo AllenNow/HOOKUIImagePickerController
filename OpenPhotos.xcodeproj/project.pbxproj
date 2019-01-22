@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		59864B5F7A38CF8631109D5E /* libPods-OpenPhotosTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30250D99943EB18540F967D1 /* libPods-OpenPhotosTests.a */; };
+		9F0EFC8C21F7715300C5A584 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0EFC8B21F7715300C5A584 /* FirstViewController.m */; };
 		9F2EAFC121F0230800C375EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2EAFC021F0230800C375EE /* AppDelegate.m */; };
 		9F2EAFC421F0230800C375EE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2EAFC321F0230800C375EE /* ViewController.m */; };
 		9F2EAFC921F0230A00C375EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F2EAFC821F0230A00C375EE /* Assets.xcassets */; };
@@ -43,6 +44,8 @@
 		07A3159FBC5E155FBD9A5757 /* libPods-OpenPhotos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OpenPhotos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30250D99943EB18540F967D1 /* libPods-OpenPhotosTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OpenPhotosTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C340AD50CE4FD239E471744 /* libPods-OpenPhotosUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OpenPhotosUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F0EFC8A21F7715300C5A584 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		9F0EFC8B21F7715300C5A584 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		9F2EAFBC21F0230800C375EE /* OpenPhotos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenPhotos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F2EAFBF21F0230800C375EE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9F2EAFC021F0230800C375EE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -122,6 +125,8 @@
 				9F2EAFC021F0230800C375EE /* AppDelegate.m */,
 				9F2EAFC221F0230800C375EE /* ViewController.h */,
 				9F2EAFC321F0230800C375EE /* ViewController.m */,
+				9F0EFC8A21F7715300C5A584 /* FirstViewController.h */,
+				9F0EFC8B21F7715300C5A584 /* FirstViewController.m */,
 				9F2EAFC821F0230A00C375EE /* Assets.xcassets */,
 				9F2EAFCA21F0230A00C375EE /* LaunchScreen.storyboard */,
 				9F2EAFCD21F0230A00C375EE /* Info.plist */,
@@ -344,6 +349,7 @@
 			files = (
 				9F2EAFC421F0230800C375EE /* ViewController.m in Sources */,
 				9F2EAFCF21F0230A00C375EE /* main.m in Sources */,
+				9F0EFC8C21F7715300C5A584 /* FirstViewController.m in Sources */,
 				9F2EAFC121F0230800C375EE /* AppDelegate.m in Sources */,
 				9FCEA6D221F573670060290A /* UIImagePickerController+custom.m in Sources */,
 			);
