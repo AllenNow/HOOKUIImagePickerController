@@ -58,7 +58,7 @@
  压缩图片
 
  @param image 原始图片
- @return 压缩完成的图片
+ @return 加工完成的图片
  */
 + (UIImage *)compressImage:(UIImage *)image {
     
@@ -88,7 +88,6 @@
 - (void)hook_setDelegate:(id<UIImagePickerControllerDelegate>)delegate {
     [self hook_setDelegate:delegate];
     if ([self isMemberOfClass:[UIImagePickerController class]]) {
-        NSLog(@"是UIImagePickerController，hook方法");
         //Hook (scrollViewDidEndDecelerating:) 方法
         Hook_Method([delegate class], @selector(imagePickerController:didFinishPickingMediaWithInfo:), [self class], @selector(swizzled_imagePickerController:didFinishPickingMediaWithInfo:), @selector(swizzled_imagePickerController:didFinishPickingMediaWithInfo:));
     } else {
@@ -97,32 +96,27 @@
 }
 
 static void Hook_Method(Class originalClass, SEL originalSel, Class replacedClass, SEL replacedSel, SEL noneSel){
-    // 原实例方法
+    //原实例方法
     Method originalMethod = class_getInstanceMethod(originalClass, originalSel);
-    // 替换的实例方法
+    //替换的实例方法
     Method replacedMethod = class_getInstanceMethod(replacedClass, replacedSel);
     // 如果没有实现 delegate 方法，则手动动态添加
     if (!originalMethod) {
         Method noneMethod = class_getInstanceMethod(replacedClass, noneSel);
         BOOL addNoneMethod = class_addMethod(originalClass, originalSel, method_getImplementation(noneMethod), method_getTypeEncoding(noneMethod));
         if (addNoneMethod) {
-            NSLog(@"******** 没有实现 (%@) 方法，手动添加成功！！",NSStringFromSelector(originalSel));
+            NSLog(@"添加成功");
         }
         return;
     }
     // 向实现 delegate 的类中添加新的方法
-    // 这里是向 originalClass 的 replaceSel（@selector(p_scrollViewDidEndDecelerating:)） 添加 replaceMethod
     BOOL addMethod = class_addMethod(originalClass, replacedSel, method_getImplementation(replacedMethod), method_getTypeEncoding(replacedMethod));
-    if (addMethod) {
-        // 添加成功
-        NSLog(@"******** 实现了 (%@) 方法并成功 Hook 为 --> (%@)", NSStringFromSelector(originalSel), NSStringFromSelector(replacedSel));
+    if (addMethod) {// 添加成功
         // 重新拿到添加被添加的 method,这里是关键(注意这里 originalClass, 不 replacedClass), 因为替换的方法已经添加到原类中了, 应该交换原类中的两个方法
         Method newMethod = class_getInstanceMethod(originalClass, replacedSel);
-        // 实现交换
-        method_exchangeImplementations(originalMethod, newMethod);
-    }else{
-        // 添加失败，则说明已经 hook 过该类的 delegate 方法，防止多次交换。
-        NSLog(@"******** 已替换过，避免多次替换 --> (%@)",NSStringFromClass(originalClass));
+        method_exchangeImplementations(originalMethod, newMethod);// 实现交换
+    }else{// 添加失败，则说明已经 hook 过该类的 delegate 方法，防止多次交换。
+        NSLog(@"已替换过，避免多次替换");
     }
 }
 
