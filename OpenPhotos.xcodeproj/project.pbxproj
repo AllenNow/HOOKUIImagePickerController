@@ -1,0 +1,659 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		59864B5F7A38CF8631109D5E /* libPods-OpenPhotosTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30250D99943EB18540F967D1 /* libPods-OpenPhotosTests.a */; };
+		9F2EAFC121F0230800C375EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2EAFC021F0230800C375EE /* AppDelegate.m */; };
+		9F2EAFC421F0230800C375EE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2EAFC321F0230800C375EE /* ViewController.m */; };
+		9F2EAFC921F0230A00C375EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F2EAFC821F0230A00C375EE /* Assets.xcassets */; };
+		9F2EAFCC21F0230A00C375EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F2EAFCA21F0230A00C375EE /* LaunchScreen.storyboard */; };
+		9F2EAFCF21F0230A00C375EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2EAFCE21F0230A00C375EE /* main.m */; };
+		9F2EAFD921F0230A00C375EE /* OpenPhotosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2EAFD821F0230A00C375EE /* OpenPhotosTests.m */; };
+		9F2EAFE421F0230A00C375EE /* OpenPhotosUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2EAFE321F0230A00C375EE /* OpenPhotosUITests.m */; };
+		9F2EAFF321F0253000C375EE /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F2EAFF221F0253000C375EE /* WebKit.framework */; };
+		9F534B1E21F6E61200D3A27B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F534B1D21F6E61200D3A27B /* Main.storyboard */; };
+		9F534B2021F6EA3700D3A27B /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 9F534B1F21F6EA3700D3A27B /* index.html */; };
+		9FCEA6D221F573670060290A /* UIImagePickerController+custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCEA6D121F573670060290A /* UIImagePickerController+custom.m */; };
+		C01DDC942CC4351D9AAE541F /* libPods-OpenPhotosUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C340AD50CE4FD239E471744 /* libPods-OpenPhotosUITests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9F2EAFD521F0230A00C375EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F2EAFB421F0230800C375EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F2EAFBB21F0230800C375EE;
+			remoteInfo = OpenPhotos;
+		};
+		9F2EAFE021F0230A00C375EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F2EAFB421F0230800C375EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F2EAFBB21F0230800C375EE;
+			remoteInfo = OpenPhotos;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07A3159FBC5E155FBD9A5757 /* libPods-OpenPhotos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OpenPhotos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30250D99943EB18540F967D1 /* libPods-OpenPhotosTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OpenPhotosTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C340AD50CE4FD239E471744 /* libPods-OpenPhotosUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OpenPhotosUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F2EAFBC21F0230800C375EE /* OpenPhotos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenPhotos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F2EAFBF21F0230800C375EE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9F2EAFC021F0230800C375EE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9F2EAFC221F0230800C375EE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9F2EAFC321F0230800C375EE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9F2EAFC821F0230A00C375EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9F2EAFCB21F0230A00C375EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9F2EAFCD21F0230A00C375EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F2EAFCE21F0230A00C375EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9F2EAFD421F0230A00C375EE /* OpenPhotosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenPhotosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F2EAFD821F0230A00C375EE /* OpenPhotosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenPhotosTests.m; sourceTree = "<group>"; };
+		9F2EAFDA21F0230A00C375EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F2EAFDF21F0230A00C375EE /* OpenPhotosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenPhotosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F2EAFE321F0230A00C375EE /* OpenPhotosUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenPhotosUITests.m; sourceTree = "<group>"; };
+		9F2EAFE521F0230A00C375EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F2EAFF221F0253000C375EE /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		9F534B1D21F6E61200D3A27B /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		9F534B1F21F6EA3700D3A27B /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		9FCEA6D021F573670060290A /* UIImagePickerController+custom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImagePickerController+custom.h"; sourceTree = "<group>"; };
+		9FCEA6D121F573670060290A /* UIImagePickerController+custom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImagePickerController+custom.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9F2EAFB921F0230800C375EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F2EAFF321F0253000C375EE /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F2EAFD121F0230A00C375EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59864B5F7A38CF8631109D5E /* libPods-OpenPhotosTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F2EAFDC21F0230A00C375EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C01DDC942CC4351D9AAE541F /* libPods-OpenPhotosUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9F2EAFB321F0230800C375EE = {
+			isa = PBXGroup;
+			children = (
+				9F2EAFBE21F0230800C375EE /* OpenPhotos */,
+				9F2EAFD721F0230A00C375EE /* OpenPhotosTests */,
+				9F2EAFE221F0230A00C375EE /* OpenPhotosUITests */,
+				9F2EAFBD21F0230800C375EE /* Products */,
+				9F2EAFF121F0252F00C375EE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9F2EAFBD21F0230800C375EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F2EAFBC21F0230800C375EE /* OpenPhotos.app */,
+				9F2EAFD421F0230A00C375EE /* OpenPhotosTests.xctest */,
+				9F2EAFDF21F0230A00C375EE /* OpenPhotosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F2EAFBE21F0230800C375EE /* OpenPhotos */ = {
+			isa = PBXGroup;
+			children = (
+				9F534B1F21F6EA3700D3A27B /* index.html */,
+				9F2EAFBF21F0230800C375EE /* AppDelegate.h */,
+				9F2EAFC021F0230800C375EE /* AppDelegate.m */,
+				9F2EAFC221F0230800C375EE /* ViewController.h */,
+				9F2EAFC321F0230800C375EE /* ViewController.m */,
+				9F2EAFC821F0230A00C375EE /* Assets.xcassets */,
+				9F2EAFCA21F0230A00C375EE /* LaunchScreen.storyboard */,
+				9F2EAFCD21F0230A00C375EE /* Info.plist */,
+				9F2EAFCE21F0230A00C375EE /* main.m */,
+				9FCEA6D021F573670060290A /* UIImagePickerController+custom.h */,
+				9FCEA6D121F573670060290A /* UIImagePickerController+custom.m */,
+				9F534B1D21F6E61200D3A27B /* Main.storyboard */,
+			);
+			path = OpenPhotos;
+			sourceTree = "<group>";
+		};
+		9F2EAFD721F0230A00C375EE /* OpenPhotosTests */ = {
+			isa = PBXGroup;
+			children = (
+				9F2EAFD821F0230A00C375EE /* OpenPhotosTests.m */,
+				9F2EAFDA21F0230A00C375EE /* Info.plist */,
+			);
+			path = OpenPhotosTests;
+			sourceTree = "<group>";
+		};
+		9F2EAFE221F0230A00C375EE /* OpenPhotosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9F2EAFE321F0230A00C375EE /* OpenPhotosUITests.m */,
+				9F2EAFE521F0230A00C375EE /* Info.plist */,
+			);
+			path = OpenPhotosUITests;
+			sourceTree = "<group>";
+		};
+		9F2EAFF121F0252F00C375EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F2EAFF221F0253000C375EE /* WebKit.framework */,
+				07A3159FBC5E155FBD9A5757 /* libPods-OpenPhotos.a */,
+				30250D99943EB18540F967D1 /* libPods-OpenPhotosTests.a */,
+				7C340AD50CE4FD239E471744 /* libPods-OpenPhotosUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9F2EAFBB21F0230800C375EE /* OpenPhotos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F2EAFE821F0230A00C375EE /* Build configuration list for PBXNativeTarget "OpenPhotos" */;
+			buildPhases = (
+				9F2EAFB821F0230800C375EE /* Sources */,
+				9F2EAFB921F0230800C375EE /* Frameworks */,
+				9F2EAFBA21F0230800C375EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenPhotos;
+			productName = OpenPhotos;
+			productReference = 9F2EAFBC21F0230800C375EE /* OpenPhotos.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9F2EAFD321F0230A00C375EE /* OpenPhotosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F2EAFEB21F0230A00C375EE /* Build configuration list for PBXNativeTarget "OpenPhotosTests" */;
+			buildPhases = (
+				98CD0CEF01235019A95D90E4 /* [CP] Check Pods Manifest.lock */,
+				9F2EAFD021F0230A00C375EE /* Sources */,
+				9F2EAFD121F0230A00C375EE /* Frameworks */,
+				9F2EAFD221F0230A00C375EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F2EAFD621F0230A00C375EE /* PBXTargetDependency */,
+			);
+			name = OpenPhotosTests;
+			productName = OpenPhotosTests;
+			productReference = 9F2EAFD421F0230A00C375EE /* OpenPhotosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9F2EAFDE21F0230A00C375EE /* OpenPhotosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F2EAFEE21F0230A00C375EE /* Build configuration list for PBXNativeTarget "OpenPhotosUITests" */;
+			buildPhases = (
+				0632A092927071BCE630A8EF /* [CP] Check Pods Manifest.lock */,
+				9F2EAFDB21F0230A00C375EE /* Sources */,
+				9F2EAFDC21F0230A00C375EE /* Frameworks */,
+				9F2EAFDD21F0230A00C375EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F2EAFE121F0230A00C375EE /* PBXTargetDependency */,
+			);
+			name = OpenPhotosUITests;
+			productName = OpenPhotosUITests;
+			productReference = 9F2EAFDF21F0230A00C375EE /* OpenPhotosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9F2EAFB421F0230800C375EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Allen Gao";
+				TargetAttributes = {
+					9F2EAFBB21F0230800C375EE = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					9F2EAFD321F0230A00C375EE = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 9F2EAFBB21F0230800C375EE;
+					};
+					9F2EAFDE21F0230A00C375EE = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 9F2EAFBB21F0230800C375EE;
+					};
+				};
+			};
+			buildConfigurationList = 9F2EAFB721F0230800C375EE /* Build configuration list for PBXProject "OpenPhotos" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9F2EAFB321F0230800C375EE;
+			productRefGroup = 9F2EAFBD21F0230800C375EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F2EAFBB21F0230800C375EE /* OpenPhotos */,
+				9F2EAFD321F0230A00C375EE /* OpenPhotosTests */,
+				9F2EAFDE21F0230A00C375EE /* OpenPhotosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9F2EAFBA21F0230800C375EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F534B2021F6EA3700D3A27B /* index.html in Resources */,
+				9F2EAFCC21F0230A00C375EE /* LaunchScreen.storyboard in Resources */,
+				9F2EAFC921F0230A00C375EE /* Assets.xcassets in Resources */,
+				9F534B1E21F6E61200D3A27B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F2EAFD221F0230A00C375EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F2EAFDD21F0230A00C375EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0632A092927071BCE630A8EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenPhotosUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98CD0CEF01235019A95D90E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenPhotosTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9F2EAFB821F0230800C375EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F2EAFC421F0230800C375EE /* ViewController.m in Sources */,
+				9F2EAFCF21F0230A00C375EE /* main.m in Sources */,
+				9F2EAFC121F0230800C375EE /* AppDelegate.m in Sources */,
+				9FCEA6D221F573670060290A /* UIImagePickerController+custom.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F2EAFD021F0230A00C375EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F2EAFD921F0230A00C375EE /* OpenPhotosTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F2EAFDB21F0230A00C375EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F2EAFE421F0230A00C375EE /* OpenPhotosUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9F2EAFD621F0230A00C375EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F2EAFBB21F0230800C375EE /* OpenPhotos */;
+			targetProxy = 9F2EAFD521F0230A00C375EE /* PBXContainerItemProxy */;
+		};
+		9F2EAFE121F0230A00C375EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F2EAFBB21F0230800C375EE /* OpenPhotos */;
+			targetProxy = 9F2EAFE021F0230A00C375EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9F2EAFCA21F0230A00C375EE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F2EAFCB21F0230A00C375EE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9F2EAFE621F0230A00C375EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9F2EAFE721F0230A00C375EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9F2EAFE921F0230A00C375EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FHERMW8SJP;
+				INFOPLIST_FILE = OpenPhotos/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = haha.OpenPhotos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9F2EAFEA21F0230A00C375EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FHERMW8SJP;
+				INFOPLIST_FILE = OpenPhotos/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = haha.OpenPhotos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9F2EAFEC21F0230A00C375EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FHERMW8SJP;
+				INFOPLIST_FILE = OpenPhotosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = haha.OpenPhotosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenPhotos.app/OpenPhotos";
+			};
+			name = Debug;
+		};
+		9F2EAFED21F0230A00C375EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FHERMW8SJP;
+				INFOPLIST_FILE = OpenPhotosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = haha.OpenPhotosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenPhotos.app/OpenPhotos";
+			};
+			name = Release;
+		};
+		9F2EAFEF21F0230A00C375EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FHERMW8SJP;
+				INFOPLIST_FILE = OpenPhotosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = haha.OpenPhotosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OpenPhotos;
+			};
+			name = Debug;
+		};
+		9F2EAFF021F0230A00C375EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FHERMW8SJP;
+				INFOPLIST_FILE = OpenPhotosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = haha.OpenPhotosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OpenPhotos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9F2EAFB721F0230800C375EE /* Build configuration list for PBXProject "OpenPhotos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F2EAFE621F0230A00C375EE /* Debug */,
+				9F2EAFE721F0230A00C375EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F2EAFE821F0230A00C375EE /* Build configuration list for PBXNativeTarget "OpenPhotos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F2EAFE921F0230A00C375EE /* Debug */,
+				9F2EAFEA21F0230A00C375EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F2EAFEB21F0230A00C375EE /* Build configuration list for PBXNativeTarget "OpenPhotosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F2EAFEC21F0230A00C375EE /* Debug */,
+				9F2EAFED21F0230A00C375EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F2EAFEE21F0230A00C375EE /* Build configuration list for PBXNativeTarget "OpenPhotosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F2EAFEF21F0230A00C375EE /* Debug */,
+				9F2EAFF021F0230A00C375EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9F2EAFB421F0230800C375EE /* Project object */;
+}
